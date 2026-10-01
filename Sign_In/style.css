@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+.Nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    grid-area: Nav;
+    align-items: center;
+    background-color: white;
+    opacity: 0.9;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 1px 2px black;
+}
+.Nav > ul > li > a {
+    text-decoration: none;
+}
+.Nav >:first-child {
+    width: 110px;
+    margin-left: 20px;
+    margin-top:10px;
+} 
+.Nav >:nth-child(2) {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+    font-weight: 530;
+    margin-left: 150px;
+}
+.Nav >:nth-child(2) > li:hover {
+    transform: scale(1.03);
+    color: #651B8A;
+    text-decoration: underline 2px #651B8A;
+    text-underline-offset: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.Nav >:nth-child(3) {
+    background-color: transparent;
+    border: 2px solid #651B8A;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 200px;
+}
+.Nav >:nth-child(3) > i{
+    color: #651B8A;
+}
+.Nav >:nth-child(4) {
+    background-color: transparent;
+    background: linear-gradient(#651B8A,#545EAA);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color:white;
+    margin-right: 20px;
+    border: none;
+}
+.Nav >:nth-child(4) > a {
+    text-decoration: none;
+    color: white;
+}
+.Nav >:nth-child(3):hover,.Nav >:nth-child(4):hover{
+   cursor: pointer;
+}
+/* Palance Content  Box*/
+
+.Sign_In_Box {
+    width: 100%;
+    height: 100vh;
+}
+.Sign_In_Box > .img_box {
+    position: relative;
+    width: 100%;
+    height: 95%;
+    margin-top: 50px;
+}
+.Sign_In_Box > .img_box > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Login_Form {
+    position: absolute;
+    margin:20px 0 0 130px;
+    width: 30%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px black;
+}
+.Login_Form >:first-child {
+    color: #651B8A;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+.Login_Form >:nth-child(2) {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.Login_Form >:nth-child(2) > span {
+    color: #f103a2;
+    font-weight: bold;
+}
+.Login_Form > form > div {
+    border: 0.1px solid rgba(0, 0, 0,0.3);
+    width: 350px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 15px;
+    padding: 5px;
+}
+.Login_Form > form > div > input {
+    border-top: 0.1px solid black;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    background: transparent;
+    margin-left: 50px;
+}
+.Login_Form > form > div > input:focus {
+    outline: none;
+}
+.Login_Form > form > div > input::placeholder {
+    font-weight: 400;
+}
+.Login_Form > form > div > label {
+    margin-left: 50px;
+    font-weight: 400;
+}
+.Login_Form > form > div > i {
+    position: absolute;
+    font-size: 20px;
+    color:#651B8A;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.Login_Form > form > #btn {
+    width: 350px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    border: none;
+    background-color: #651B8A;
+    color: white;
+    border-radius: 10px;
+}
+#btn:hover {
+    cursor: pointer;
+}
+#btn > a {
+    text-decoration: none;
+    color: white;
+}
+#or {
+    margin: 5px 0 0 190px;
+}
+#btn1{
+    width: 350px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#btn1 > img {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+#agree {
+    font-weight: 500;
+    font-size: 13px;
+    margin: 10px 0 0 25px;
+}
+#agree > span {
+    color: #f103a2;
+}
+
+/* Footer Box Modles */
+
+footer {
+    margin-top: -20px;
+    width: 100%;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 10px;
+}
+.Footer_Main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-rule-style: solid;
+    column-rule-color: #3e3e44;
+    column-rule-width: 1px;
+}
+.logo_page > img {
+    width: 150px;
+    margin-top:-35px;
+}
+.logo_page > p {
+    margin-top: -50px;
+    margin-left: 20px;
+}
+.logo_page > .icon {
+    display: flex;
+    column-gap: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.logo_page > .icon:hover{
+    cursor: pointer;
+}
+
+/* Scound Column  */
+
+.links_page > span {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 35%;  
+}
+.links_page > p {
+    margin-top: 10px;
+    margin-left: 35%;
+    line-height: 28px;
+}
+
+/* Third Column */
+
+.destination_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.destination_page > span {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10%;  
+    font-weight: bold;
+}
+.destination_page > p {
+    margin-left: 10%;
+    margin-top: 1px; 
+}
+
+/* Final column */
+
+.contect_page > p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 35%;  
+    font-weight: bold;
+}
+.contect_page >:nth-child(3) {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.contect_page >:nth-child(6) {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.contect_page >:nth-child(9) {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+/* Footy Bar */
+
+.footy {
+    font-size: 13px;
+    text-align: center;
+}
+.footy >:last-child {
+    margin-left: 50px;
+}
